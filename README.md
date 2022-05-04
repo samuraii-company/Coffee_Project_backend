@@ -1,4 +1,4 @@
-Coffee Shop Project
+Coffee Shop Project Backend
 
 Version: 1.0.0
 
