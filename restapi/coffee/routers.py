@@ -70,7 +70,7 @@ async def get_coffee_by_id(id: int, database: Session = Depends(get_db)):
 
 
 @router.delete("/{id}/", status_code=200)
-async def get_coffee_by_id(id: int, database: Session = Depends(get_db), current_user: User = Depends(get_stuff_user)):
+async def delete_coffee_by_id(id: int, database: Session = Depends(get_db), current_user: User = Depends(get_stuff_user)):
     """Delete Coffee by id"""
 
     if not await services.get_coffee_by_id(id, database):
