@@ -17,7 +17,7 @@ async def new_user_register(user: schemas.User, database: Session):
     database.refresh(_user)
 
 
-async def get_all_coffee(database: Session):
+async def get_all_users(database: Session):
     """Get all users"""
 
     return database.query(models.Users).all()
